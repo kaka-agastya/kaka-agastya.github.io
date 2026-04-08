@@ -17,11 +17,36 @@
       href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-
+    <script>
+      function showme() {
+        // alert("Halo Selamat Siang");
+        Swal.fire({
+          title: "Hallo!",
+          text: "Selamat Siang!",
+          icon: "success",
+        });
+        console.log("Ini baris 18, sudah sampai disini");
+        a = 18 + 10;
+        console.log("Hasil penjumlahaan : " + a);
+        c = 1 * 2 * 3;
+        console.log("Hasil Perkalian : " + c);
+      }
+      function changeText() {
+        const element = document.getElementById("intro");
+        element.innerHTML = "Sistem Informasi ITS";
+        // document.getElementById("intro").element.innerHTML = "Sistem Informasi ITS";
+      }
+      function changeStyle() {
+        const element = document.getElementById("tombol");
+        element.style.color = "red";
+        element.style.background = "yellow";
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
       body {
         font-family: "Crimson Text", monospace;
-        background: linear-gradient(to bottom, #9fb1bd, #cad5dd);
+        background: #a8a39b;
         min-height: 100vh;
       }
 
@@ -93,12 +118,12 @@
           border-radius: 0 0 0 0;
         }
         .c-subtitle {
-        font-size: 0.8rem;
-        text-align: center;
-        color: #1f0707;
-        padding-left: 0rem;
-        padding-right: 0rem;
-      }
+          font-size: 0.8rem;
+          text-align: center;
+          color: #1f0707;
+          padding-left: 0rem;
+          padding-right: 0rem;
+        }
       }
 
       .c-socials {
@@ -214,7 +239,7 @@
             src="assets/img/linktree/kai.webp"
             alt="KAI 121"
           />
-          <div class="c-title">KAI 121</div>
+          <div id="intro" class="c-title">KAI 121</div>
           <div class="c-subtitle">
             Layanan Pelanggan KAI. Call Center: 121. E-Mail: cs@kai.id Mohon
             waspadai scam/penipuan dari akun media sosial atau WhatsApp yang
@@ -273,6 +298,7 @@
           </div>
 
           <a
+            id="tombol"
             href="https://api.whatsapp.com/send/?phone=6281122233121&text&type=phone_number&app_absent=0"
             class="c-link"
             target="_blank"
@@ -306,10 +332,10 @@
             <span class="c-link-dots">⋮</span>
           </a>
           <a
-          href="http://e-recruitment.kai.id/"
-          class="c-link"
-          target="_blank"
-          rel="noopener"
+            href="http://e-recruitment.kai.id/"
+            class="c-link"
+            target="_blank"
+            rel="noopener"
           >
             <div class="c-link-body">Website Resmi Rekrutmen PT KAI</div>
             <span class="c-link-dots">⋮</span>
@@ -320,9 +346,7 @@
             target="_blank"
             rel="noopener"
           >
-            <div class="c-link-body">
-              Website Resmi PT KAI
-            </div>
+            <div class="c-link-body">Website Resmi PT KAI</div>
             <span class="c-link-dots">⋮</span>
           </a>
           <a
@@ -390,6 +414,14 @@
             <div class="c-link-body">Official Threads KAI 121</div>
             <span class="c-link-dots">⋮</span>
           </a>
+
+          <button class="btn btn-primary" onclick="showme()">Show Me</button>
+          <button class="btn btn-primary" onclick="changeText()">
+            Change Text
+          </button>
+          <button class="btn btn-primary" onclick="changeStyle()">
+            Change Style
+          </button>
           <a
             href="https://linktr.ee"
             class="c-join-btn"
@@ -406,3 +438,5 @@
     </div>
   </body>
 </html>
+<!-- id miliknya javascript -->
+<!-- function dan void beda tipis -->
