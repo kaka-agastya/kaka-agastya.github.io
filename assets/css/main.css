@@ -10,6 +10,9 @@
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
+/* Warna */
+/* #920404
+#d00606 */
 /* Fonts */
 :root {
   --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -21,8 +24,8 @@
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #37517e; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #47b2e4; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --heading-color: #411e1e; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #920404; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -45,7 +48,7 @@
 }
 
 .dark-background {
-  --background-color: #37517e;
+  --background-color: #920404;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #4668a2;
@@ -214,7 +217,7 @@ h6 {
 /* Index Page Header on Scroll
 ------------------------------*/
 .index-page.scrolled .header {
-  --background-color: rgba(40, 58, 90, 0.9);
+  --background-color: #920404;
 }
 
 /*--------------------------------------------------------------
@@ -267,7 +270,8 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: #000000;
+    font-weight: bold;
   }
 
   .navmenu .dropdown ul {
@@ -811,6 +815,7 @@ section,
   padding-bottom: 20px;
   text-transform: uppercase;
   position: relative;
+  color: #920404;
 }
 
 .section-title h2:before {
@@ -832,7 +837,7 @@ section,
   display: block;
   width: 60px;
   height: 3px;
-  background: var(--accent-color);
+  background: #d00606;
   left: 0;
   right: 0;
   bottom: 0;
@@ -869,10 +874,9 @@ section,
   line-height: 1.3;
   font-weight: 600;
 }
-
 .hero .btn-get-started {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: #d00606;
   font-family: var(--heading-font);
   font-weight: 500;
   font-size: 15px;
@@ -989,7 +993,7 @@ section,
 }
 
 .about .read-more {
-  color: var(--accent-color);
+  color: #d00606;
   font-family: var(--heading-font);
   font-weight: 500;
   font-size: 16px;
@@ -1000,7 +1004,7 @@ section,
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid var(--accent-color);
+  border: 2px solid #d00606;
 }
 
 .about .read-more i {
@@ -1011,8 +1015,8 @@ section,
 }
 
 .about .read-more:hover {
-  background: var(--accent-color);
-  color: var(--contrast-color);
+  background: #920404;
+  color: #ffffff;
 }
 
 .about .read-more:hover i {
@@ -1055,6 +1059,7 @@ section,
   margin: 0 30px 0 0;
   transition: 0.3s;
   cursor: pointer;
+  color: var(--accent-color);
 }
 
 .why-us .faq-container .faq-item h3 span {
@@ -1087,7 +1092,7 @@ section,
   font-size: 22px;
   line-height: 0;
   transition: 0.3s;
-  color: var(--accent-color);
+  color: #920404;
 }
 
 .why-us .faq-container .faq-item .faq-toggle {
@@ -1922,6 +1927,7 @@ section,
   transition: 0.3s ease-in-out;
   visibility: hidden;
   opacity: 0;
+  color: #000000;
 }
 
 .faq-2 .faq-container .faq-item .faq-content p {
