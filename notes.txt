@@ -1,0 +1,6 @@
+Ganti font
+warna
+hover
+navbar
+tambah card (?)
+ganti icon
